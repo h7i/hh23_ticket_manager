@@ -43,9 +43,8 @@ html {
 .container .minibox{
     
     height: 243px;
-    width: 480px;
-    background-color: #FFFFFF;
-    border: 2px solid black;
+    width: 460px;
+    background: transparent;
 }
 .under {
     display: flex;

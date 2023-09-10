@@ -16,13 +16,13 @@
   <script>
     //Makes a post request to our database to save joke
     function handleSave() {
-      console.log("test 1");
+      //console.log("test 1");
       let primary = document.getElementById("NumberBox").value;
       let secondary = document.getElementById("OrderBox").value;
       let tertiary = document.getElementById("PriceBox").value;
-      console.log(primary)
-      console.log(secondary)
-      console.log(tertiary)
+      //console.log(primary)
+      //console.log(secondary)
+      //console.log(tertiary)
 
       axios({
         method: 'post',
@@ -37,7 +37,31 @@
   </script>
 
   <script>
+  //makes a get request to our database to get a random joke
+  
+  let data;
+  fetch('./db.json')
+    .then((response) => response.json())
+    .then((parsedData) => {
+      data = parsedData;
+    console.log(data);
+    //let dataNext = data.orders[0]
+      for(let i=0; i<=8; i++){
+        let ticketNumber = data.orders[i].ticketNumber  || "No ticket number";
+        let orderText = data.orders[i].orderText || "No order given";
+        let priceText = data.orders[i].priceText || "No price given";
+        
+        //console.log("ticketNum" + i.toString());
+        document.getElementById("ticketNum" + i.toString()).innerHTML = ticketNumber;
+        document.getElementById("orderText" + i.toString()).innerHTML = orderText;
+        document.getElementById("priceText" + i.toString()).innerHTML = priceText;
 
+      
+      }
+    
+    })
+    
+      //let data = response.json();
   </script>
   
   <!-- ANYTHING HERE SHOWS UP ON THE WEBSITE -->
@@ -48,19 +72,56 @@
     <div class="container">
         <div class="one">
           <div class="minibox">
-            <h1>Test
+            <h1>Order number: <span id="ticketNum0"></span></h1>
+            <h1>Order: <span id="orderText0"></span></h1>
+            <h1>Price: <span id="priceText0"></span></h1>
           </div>
           <div class="minibox">
-            <h1>Test
+            <h1>Order number: <span id="ticketNum1"></span></h1>
+            <h1>Order: <span id="orderText1"></span></h1>
+            <h1>Price: <span id="priceText1"></span></h1>
           </div>
           <div class="minibox">
-            <h1>Test
+            <h1>Order number: <span id="ticketNum2"></span></h1>
+            <h1>Order: <span id="orderText2"></span></h1>
+            <h1>Price: <span id="priceText2"></span></h1>
           </div>
          
-        </h1>
         </div>
-        <div class="two"></div>
-        <div class="three"></div>
+        <div class="two"><div class="minibox">
+          <h1>Order number: <span id="ticketNum3"></span></h1>
+          <h1>Order: <span id="orderText3"></span></h1>
+          <h1>Price: <span id="priceText3"></span></h1>
+        </div>
+        <div class="minibox">
+          <h1>Order number: <span id="ticketNum4"></span></h1>
+          <h1>Order: <span id="orderText4"></span></h1>
+          <h1>Price: <span id="priceText4"></span></h1>
+        </div>
+        <div class="minibox">
+          <h1>Order number: <span id="ticketNum5"></span></h1>
+          <h1>Order: <span id="orderText5"></span></h1>
+          <h1>Price: <span id="priceText5"></span></h1>
+        </div>
+       </div>
+    
+        <div class="three">
+          <div class="minibox">
+            <h1>Order number: <span id="ticketNum6"></span></h1>
+            <h1>Order: <span id="orderText6"></span></h1>
+            <h1>Price: <span id="priceText6"></span></h1>
+          </div>
+          <div class="minibox">
+            <h1>Order number: <span id="ticketNum7"></span></h1>
+            <h1>Order: <span id="orderText7"></span></h1>
+            <h1>Price: <span id="priceText7"></span></h1>
+          </div>
+          <div class="minibox">
+            <h1>Order number: <span id="ticketNum8"></span></h1>
+            <h1>Order: <span id="orderText8"></span></h1>
+            <h1>Price: <span id="priceText8"></span></h1>
+          </div>
+        </div>
     </div>
     <div class="under">
         <a href="https://sites.google.com/view/pwdtamu/about-us"><button class="words">About us</button></a>
@@ -94,7 +155,7 @@
     authorElem.innerHTML = joke["first name"];
   </script> -->
 
-  <script>
+  <!--<script>
     //makes a get request to our database to get a random joke
     axios({
       method: 'get',
@@ -113,7 +174,7 @@
       authorElem.innerHTML = answer
     });
   </script>
-
+  -->
 
 </html>
 
