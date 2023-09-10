@@ -27,22 +27,28 @@ html {
 
 
 .container .one{
+    height: 651px;
+    width: 400px;
     border: 2px solid black;
 }
 
 
 .container .two{
+    height: 651px;
+    width: 400px;
     border: 2px solid black;
 }
 
 
 .container .three{
+    height: 651px;
+    width: 400px;
     border: 2px solid black;
 }
 
 .container .minibox{
     
-    height: 243px;
+    height: 203px;
     width: 460px;
     background: transparent;
 }
