@@ -40,7 +40,13 @@ html {
     border: 2px solid black;
 }
 
-
+.container .minibox{
+    
+    height: 243px;
+    width: 480px;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+}
 .under {
     display: flex;
     height: 50px;
