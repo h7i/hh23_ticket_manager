@@ -11,19 +11,9 @@
       "priceText": "$8"
     },
     {
-      "ticketNumber": "5",
-      "orderText": "butterbeer",
-      "priceText": "9"
-    },
-    {
       "ticketNumber": "6",
       "orderText": "love potion",
       "priceText": "15"
-    },
-    {
-      "ticketNumber": "7",
-      "orderText": "chocolate frogs",
-      "priceText": "0.5"
     },
     {
       "ticketNumber": "8",
@@ -41,9 +31,9 @@
       "priceText": "1000"
     },
     {
-      "ticketNumber": "11",
-      "orderText": "monkey",
-      "priceText": "15000"
+      "ticketNumber": "12",
+      "orderText": "who knows",
+      "priceText": "12"
     }
   ]
 }

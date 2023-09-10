@@ -48,6 +48,8 @@ html {
     height: 203px;
     width: 460px;
     background: transparent;
+    
+    font-family: sans-serif;
 }
 .under {
     display: flex;
