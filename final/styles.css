@@ -27,18 +27,21 @@ html {
 
 
 .container .one{
+    border-radius: 35px;
     height: 651px;
     width: 400px;
 }
 
 
 .container .two{
+    border-radius: 35px;
     height: 651px;
     width: 400px;
 }
 
 
 .container .three{
+    border-radius: 35px;
     height: 651px;
     width: 400px;
 }
@@ -107,12 +110,15 @@ html {
 }
 .under .box1 {
     margin-left: 60px;
+    border-radius: 10px;
 }
 .under .box2 {
     margin-left: 60px;
+    border-radius: 10px;
 }
 .under .box3 {
     margin-left: 60px;
+    border-radius: 10px;
 }
 
 .under .enterbox {
