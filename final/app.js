@@ -30,7 +30,7 @@ const db = new Low(adapter)
 //If it does exist, do nothing. db.data will be ready for use.
 //Where I got this: https://github.com/typicode/lowdb
 await db.read()
-db.data ||= { jokes: [] } 
+db.data ||= { orders: [] } 
 await db.write()
 
 /*
@@ -41,17 +41,18 @@ We want this section to:
   - Update the jokes array in our database
   - Respond with a successful status code (200)
 */
-app.post('/save-joke', async (req, res) => {
+app.post('/save-order', async (req, res) => {
   console.log("POST endpoint hit!")
 
-  let joke = {
-    joke: req.body.joke,
-    delivery: req.body.delivery,
+  let order = {
+    ticketNumber: req.body.ticketNumber,
+    orderText: req.body.orderText,
+    priceText: req.body.priceText,
   };
 
   await db.read();
-  const { jokes } = db.data;
-  jokes.push(joke);
+  const { orders } = db.data;
+  orders.push(order);
   await db.write();
 })
 
@@ -77,8 +78,8 @@ app.get('/', (req, res) => {
 app.get('/saved-jokes', async (req, res) => {
   console.log("GET endpoint hit!")
   await db.read();
-  const { jokes } = db.data;
-  res.send(jokes);
+  const { orders } = db.data;
+  res.send(orders);
 })
 
 //Start the app on the specified port. Any request to the app should be made to localhost:{port}

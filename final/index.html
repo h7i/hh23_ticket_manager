@@ -15,15 +15,20 @@
   <script>
     //Makes a post request to our database to save joke
     function handleSave() {
-      let primary = document.getElementById("title").innerHTML;
-      let secondary = document.getElementById("author").innerHTML;
+      let primary = document.getElementById("NumberBox").value;
+      let secondary = document.getElementById("OrderBox").value;
+      let tertiary = document.getElementById("PriceBox").value;
+      console.log(primary)
+      console.log(secondary)
+      console.log(tertiary)
 
       axios({
         method: 'post',
-        url: 'http://localhost:3001/save-joke',
+        url: 'http://localhost:3001/save-order',
         data: {
-          joke: primary || "",
-          delivery: secondary || "",
+          ticketNumber: primary || "",
+          orderText: secondary || "",
+          priceText: tertiary || "",
         }
       })
     }
@@ -37,12 +42,13 @@
         <p id="author" class="subtitle">Loading...</p>
       </div>
       <footer class="card-footer">
-        <a onclick="window.location.reload()" class="card-footer-item">
-          Next Joke
-        </a>
         <a onclick="handleSave()" class="card-footer-item">
-          Save Joke
+          Place ticket
         </a>
+        <label for="OrderBox1">Place ticket:</label>
+        <input type="text" id="NumberBox" name="NumberBox" placeholder="Ticket number">
+        <input type="text" id="OrderBox" name="OrderBox" placeholder="Order">
+        <input type="text" id="PriceBox" name="PriceBox" placeholder="Price">
       </footer>
     </div>
   </body>
