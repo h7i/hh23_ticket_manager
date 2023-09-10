@@ -29,21 +29,18 @@ html {
 .container .one{
     height: 651px;
     width: 400px;
-    border: 2px solid black;
 }
 
 
 .container .two{
     height: 651px;
     width: 400px;
-    border: 2px solid black;
 }
 
 
 .container .three{
     height: 651px;
     width: 400px;
-    border: 2px solid black;
 }
 
 .container .minibox{
@@ -120,7 +117,6 @@ html {
     
     margin-left: 190px;
     background-color: #FFFFFF;
-    border: 2px solid black;
     height: 36px;
     width: 70px;
     text-align: center;
