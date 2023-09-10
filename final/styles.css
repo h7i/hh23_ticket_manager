@@ -1,0 +1,117 @@
+html {
+    /* background-color: #c7e9ff; */
+    background-image: linear-gradient(rgb(199,233,255), #007aff);
+}
+
+
+.title h1{
+    text-align: center;
+    font-family: sans-serif;
+
+
+}
+
+
+.container{
+    display: flex;
+}
+
+
+.container div{
+    height: 780px;
+    width: 400px;
+    flex: 1;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+
+
+.container .one{
+    border: 2px solid black;
+}
+
+
+.container .two{
+    border: 2px solid black;
+}
+
+
+.container .three{
+    border: 2px solid black;
+}
+
+
+.under {
+    display: flex;
+    height: 50px;
+}
+
+
+.under div{
+    flex: 1;
+}
+
+
+.under .words{
+    margin-left: 120px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 80px;
+
+
+}
+
+
+.under .words:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.under .card{
+    margin-left: 120px;
+}
+
+
+
+.under .learn {
+    margin-left: 230px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 80px;
+
+
+}
+
+
+.under .learn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.under .orderText1 {
+    margin-left: 135px;
+}
+.under .box1 {
+    margin-left: 60px;
+}
+.under .box2 {
+    margin-left: 60px;
+}
+.under .box3 {
+    margin-left: 60px;
+}
+
+.under .enterbox {
+    
+    margin-left: 190px;
+    background-color: #FFFFFF;
+    border: 2px solid black;
+    height: 36px;
+    width: 70px;
+    text-align: center;
+    padding:4px;
+}

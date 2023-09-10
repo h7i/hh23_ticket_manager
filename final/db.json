@@ -1,9 +1,5 @@
 {
   "orders": [
-    {
-      "ticketNumber": "1",
-      "orderText": "food",
-      "priceText": "$1"
-    }
+    
   ]
 }
