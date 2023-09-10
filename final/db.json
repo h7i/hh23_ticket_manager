@@ -1,4 +1,49 @@
 {
   "orders": [
+    {
+      "ticketNumber": "2",
+      "orderText": "burger",
+      "priceText": "$7"
+    },
+    {
+      "ticketNumber": "4",
+      "orderText": "apple pie",
+      "priceText": "$8"
+    },
+    {
+      "ticketNumber": "5",
+      "orderText": "butterbeer",
+      "priceText": "9"
+    },
+    {
+      "ticketNumber": "6",
+      "orderText": "love potion",
+      "priceText": "15"
+    },
+    {
+      "ticketNumber": "7",
+      "orderText": "chocolate frogs",
+      "priceText": "0.5"
+    },
+    {
+      "ticketNumber": "8",
+      "orderText": "tasty jellybeans",
+      "priceText": "0.7"
+    },
+    {
+      "ticketNumber": "9",
+      "orderText": "pencils",
+      "priceText": "0.8"
+    },
+    {
+      "ticketNumber": "10",
+      "orderText": "quidditch stick",
+      "priceText": "1000"
+    },
+    {
+      "ticketNumber": "11",
+      "orderText": "monkey",
+      "priceText": "15000"
+    }
   ]
 }

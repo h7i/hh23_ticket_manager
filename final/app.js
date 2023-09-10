@@ -56,6 +56,18 @@ app.post('/save-order', async (req, res) => {
   await db.write();
 })
 
+app.post('/remove-order', async (req, res) => {
+  console.log("POST endpoint hit!")
+
+  let orderNum = req.body.orderNum
+  
+  console.log(orderNum);
+  await db.read();
+  const { orders } = db.data;
+  console.log(orders[4])
+  orders.splice(orderNum, 1);
+  await db.write();
+})
 /*
 JOKES GET REQUEST
 Front-end will make a GET request to the app at this endpoint
